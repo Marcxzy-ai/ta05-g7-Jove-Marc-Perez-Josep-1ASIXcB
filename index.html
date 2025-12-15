@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pagina web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Nom Cognom</title>
+    <link rel="stylesheet" href="css/index.Css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-hola soc el marc
+    <div class="container">
+        <!-- Header EXACTO como la imagen -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+                <span class="index">Index</span>
+                <span class="decorations">www.ooo</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sección Principal EXACTA como la imagen -->
+        <section class="hero" id="home">
+            <h1 class="hero-title">NOM</h1>
+
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <span class="intro-text">I'm </span>
+                    <span class="highlight">Marc Jové</span>
+                </div>
+                <p class="hero-subtitle">A Product Designer</p>
+                <p class="hero-location">based in Spain</p>
+
+                <div class="hero-text-container">
+                    <div class="hero-text">
+                        miguaadagapnfakrjifngfmugnfnjfnqjafjnqpffnefnjunfnlujfmugnfjnqjfnlqgjfnfmugjfmugjf
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos EXACTA -->
+        <section class="featured-projects" id="proyectos">
+            <h2 class="section-title">Projectes Destacats</h2>
+
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-container">
+                            <h3 class="project-title">Projecto 1</h3>
+                            <span class="project-arrow">→</span>
+                        </div>
+                        <a href="HTML/projecte1.html" class="view-project-link">Ver proyecto</a>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-content">
+                            <p class="preview-title">Identidad digital y desarrollo Front-End</p>
+                            <p class="preview-meta">Nov 2024 | HTML 5 CSS | Diseño Individual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-container">
+                            <h3 class="project-title">Projecto 2</h3>
+                            <span class="project-arrow">→</span>
+                        </div>
+                        <a href="HTML/projecte2.html" class="view-project-link">Ver proyecto</a>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-content">
+                            <p class="preview-title">Identidad digital y desarrollo Front-End</p>
+                            <p class="preview-meta">Nov 2025 | HTML 8 CSS | Diseño Individual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="copyright">© 2025 [El Vostre Nom]. Tots els drets reservats.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
