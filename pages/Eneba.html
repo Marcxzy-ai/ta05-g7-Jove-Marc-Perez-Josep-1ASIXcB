@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 1 - Eneba</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estils.css">
+    <style>
+        /* =========================================
+           1. ESTILOS GENERALES (RESET)
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000; /* Fondo NEGRO */
+            color: #ffffff;            /* Texto BLANCO */
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* =========================================
+           2. ESTILOS DEL MENÚ (HEADER)
+           ========================================= */
+
+
+
+        /* =========================================
+           3. ESTILOS DE LA PÁGINA TETRIS
+           ========================================= */
+
+        /* Contenedor principal */
+        .projecte-container {
+            padding-top: 150px; /* Espacio para no chocar con el menú */
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 50px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        /* Títulos */
+        .projecte-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem; /* Título grande */
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        /* Datos (Fecha, skills...) */
+        .meta-info {
+            font-size: 0.95rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .meta-icon { margin-right: 5px; }
+
+        /* IMAGEN GRANDE */
+        .projecte-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0; /* Bordes rectos como en tu diseño */
+            margin-bottom: 60px;
+            background-color: #222; /* Fondo gris si no carga */
+        }
+
+        /* Texto descriptivo */
+        .projecte-descripcio {
+            margin-bottom: 80px;
+            max-width: 900px;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #dddddd;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Sección Partida (Texto izq - Foto der) */
+        .projecte-split {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; /* Alineados abajo */
+            gap: 50px;
+            margin-bottom: 100px;
+            padding-top: 50px;
+        }
+
+        .split-text { width: 55%; }
+        .split-image { width: 40%; }
+
+        .split-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Línea final */
+        .separator-line {
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+            opacity: 0.2;
+            margin-top: 50px;
+        }
+
+
+
+        /* RESPONSIVE (MÓVIL) */
+        @media (max-width: 768px) {
+            .projecte-container { padding-left: 5%; padding-right: 5%; }
+            .projecte-header h1 { font-size: 2.5rem; }
+            .projecte-split { flex-direction: column; }
+            .split-text, .split-image { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Marc Jové</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">index</a></li>
+                <li><a href="pagina.html">projectes</a></li>
+                <li><a href="Formula1.html">Formula1 TV</a></li>
+                <li><a href="Eneba.html" class="active">Eneba</a></li>
+                <li><a href="contacte.html">contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projecte-container">
+
+        <div class="projecte-header">
+            <h1>Eneba</h1>
+            <p class="subtitle">Es una applicacio de compra o ventes de productes nous o de segona ma</p>
+
+            <div class="meta-info">
+                <span>🗓️ Nov 2024</span>
+                <span>|</span>
+                <span>💻 HTML, CSS & JS</span>
+                <span>|</span>
+                <span>👤 Projecte Individual</span>
+            </div>
+        </div>
+
+        <div class="projecte-hero">
+            <img src="../img/860w_Eneba.webp" alt="Portada del Tetris">
+        </div>
+
+        <section class="projecte-descripcio">
+            <h2>Sobre el projecte:</h2>
+            <p>
+                Aques projecte esta fet per donar competencia al Wallapop on la gent pot vendre cosas de segona ma pero esta enfocat mes per el gamning o la tecnologia on pots vendre o comprar jocs,components,pack etc.....
+            </p>
+        </section>
+
+        <section class="projecte-split">
+            <div class="split-text">
+                <h2>COM ES VA FER:</h2>
+                <p>
+                    Es va fer amb kodlin y amb java on si tu dones en alun joc o algu te interesa et sortira diferents vendedors que venen aquell producte
+                </p>
+                <p>
+                    On tambe vaig posar un contadors de punts per cada compra que fagis tindras a la seguent un x descompte
+                </p>
+            </div>
+            <div class="split-image">
+                <img src="../img/68e7a03c81d65.webp" alt="Detall del codi">
+            </div>
+        </section>
+
+        <div class="separator-line"></div>
+
+    </main>
+
+
+    <footer>
+        <p class="footer-text">© 2025 Marc Jové. Tots els drets reservats.</p>
+    </footer>
+
+</body>
+</html>
